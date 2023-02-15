@@ -1,0 +1,42 @@
+body{
+    background-color:black;
+}
+
+.article-title{
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    width: 280px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.stats{
+    font-size: 14px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.description{
+    font-size: 14px;
+    color: white;
+    width: 250px;
+    line-height: 22px;
+    margin-top: 0;
+}
+.thumbnail{
+    width: 250px;
+}
+.thumbnail1{
+    width: 40px;
+    border-radius:50px;
+}
+
+.user{
+    font-size: 12px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display:inline-block
+
+}
+
