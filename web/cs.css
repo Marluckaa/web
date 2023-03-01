@@ -1,0 +1,58 @@
+.subbut{
+    background-color: rgb(218, 23, 23);
+    color: whitesmoke;
+    border: none;
+    height: 30px;
+    width: 108px;
+    border-radius: 3px;
+    cursor: pointer;   
+    font-weight: bold;
+    font-size: 15px;
+    transition: opacity 0.15s;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+.subbut:hover{
+    opacity:0.7;
+}
+.subbut:active{
+    opacity:0.5;
+}
+.joinbut{
+    background-color: white;
+    color:blue;
+    border-color: blue;
+    height: 30px;
+    width: 65px;
+    border-radius: 3px;
+    cursor: pointer;   
+    margin-right: 10px;
+    padding-top: 5px;
+
+
+}
+.joinbut:hover{
+    opacity: 0.7;
+    background-color: blue;
+    color: white;
+}
+.joinbut:active{
+    opacity: 0.5;
+}
+.tweetbut{
+    background-color: rgb(54, 134, 224);
+    color: whitesmoke;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 13px;
+    cursor: pointer; 
+    margin-right: 10px;
+    padding-top: 5px;
+
+}
+.tweetbut:hover{
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+   
+}
