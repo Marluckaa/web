@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script lang="javascript">
+        function ShowUser(str){
+            if(str==""){
+                document.getElementById("ShowHere").innerHTML = "";
+                return;
+            }else{
+                var http = new XMLHttpRequest();
+                http.onreadystatechange = function(){
+                    if(this.readyState==4&&this.status==200){
+                        document.getElementById("ShowHere").innerHTML = this.responseText;
+                    }
+                };
+                http.open("GET", "user.php?q="+str, true);
+                http.send();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <select name="users" onchange="ShowUser(this.value)">
+            <option value="">Select a person: </option>
+            <option value="1">Bat</option>
+            <option value="2">Bold</option>
+            <option value="3">Davaa</option>
+            <option value="4">Sanchir</option>
+        </select>
+    </form>
+    <br>
+    <div id="ShoeHere">
+        Person info will be shown here
+    </div>
+</body>
+</html>

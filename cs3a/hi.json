@@ -1,0 +1,23 @@
+
+{"users": [{
+        "firstname":"Maralgua",
+        "Age":21,
+        "isProgrammer":false,
+        "Study":["ML","DL","SE"],
+        "Guardian":[{
+            "Firstname":"Ganbold",
+            "Relative":"father",
+            "hasPhone":true
+        }]
+    },{
+        "firstname":"bat",
+        "Age":20,
+        "isProgrammer":false,
+        "Study":["CS","AI","OS"],
+        "Guardian":[{
+            "Firstname":null,
+            "Relative":"MOTHER",
+            "hasPhone":true
+        }]
+    }
+    ]}

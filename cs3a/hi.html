@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="result">
+
+    </ul>
+    <script type="text/javascript">
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+              var response = JSON.parse(xhttp.responseText);
+              var hereglegch = response.student;
+              var output = '';
+              for(var i=0; i<hereglegch.length;i++){
+                
+                output+= '<li>'+hereglegch[i].name+'<li>';
+                output+= '<li>'+hereglegch[i].Phone+'<li>';
+                output+= '<li>'+hereglegch[i].username+'<li>';
+                    
+
+
+              }  
+              console.log(response.student);
+              document.getElementById("result").innerHTML = output;
+            }
+        };
+        xhttp.open("GET","hi.json", true);
+        xhttp.open("GET","student.json", true);
+        
+        xhttp.send();
+
+    </script>
+</body>
+</html>
